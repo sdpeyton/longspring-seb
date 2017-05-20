@@ -36,6 +36,7 @@ ROOT_DIR = BASE_DIR[0:BASE_DIR.rfind('/')]
 
 STATICFILES_DIRS = (
     os.path.join(ROOT_DIR, 'assets'),
+    os.path.join(ROOT_DIR, 'static'),
 )
 
 WEBPACK_LOADER = {
@@ -139,4 +140,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static/'
+STATIC_ROOT = '/static/'
