@@ -54,6 +54,7 @@ PREREQ_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
+    'compressor',
 ]
 
 PROJECT_APPS = [
@@ -90,10 +91,6 @@ TEMPLATES = [
         },
     },
 ]
-
-# TEMPLATE_DIRS = (
-#     os.path.join(ROOT_DIR, 'templates'),
-# )
 
 WSGI_APPLICATION = 'app.wsgi.application'
 

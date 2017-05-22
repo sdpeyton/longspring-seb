@@ -1,21 +1,15 @@
-<head>
+<meta charset="utf-8">
+<title>{% if title %}{{title}}{% else %}SEB Model{% endif %}</title>
+<meta name="description" content="">
+<meta name="author" content="Longspring LLC">
 
-    <meta charset="utf-8">
-    <title>{% if title %}{{title}}{% else %}SEB Model{% endif %}</title>
-    <meta name="description" content="">
-    <meta name="author" content="Longspring LLC">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+{% load static %}
+<link rel='stylesheet' href="{% static 'css/normalize.css' %}" />
+<link rel='stylesheet' href="{% static 'css/skeleton.css' %}" />
+<link rel='stylesheet' href="{% static 'css/style.css' %}" />
 
-    {% load static %}
-    <link rel='stylesheet' href="{% static 'css/normalize.css' %}" />
-    <link rel='stylesheet' href="{% static 'css/skeleton.css' %}" />
-    <link rel='stylesheet' href="{% static 'css/style.css' %}" />
-
-    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
-
-    {% block additional_assets %}{% endblock %}
-
-</head>
+<link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">

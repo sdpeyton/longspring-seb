@@ -20,6 +20,7 @@
     "webpack-bundle-tracker": "^0.2.0"
   },
   "dependencies": {
+    "less": "^2.7.2",
     "webpack-bundle-tracker": "^0.2.0"
   }
 }

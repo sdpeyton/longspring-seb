@@ -1,12 +1,13 @@
-<div class="section header">
+{% load static %}
+<div id="header" class="section">
     <div class="container">
       	<div class="row">
 	        <div class="one-half column">
-	          	<h4>Satellite imagery and model results at your fingertips.</h4>
-	          	<a class="button button-primary" href="">Start Mapping</a>
+	          	<h4>Powerful insights from satellite imagery at your fingertips.</h4>
+	          	<a class="button button-primary" href="{% url 'model' %}">Start Mapping</a>
 	        </div>
 	        <div class="one-half column">
-	          
+	          <img class="header-img" src="{% static 'images/imagery.jpeg' %}" />
 	        </div>
       	</div>
     </div>

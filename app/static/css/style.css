@@ -22,3 +22,40 @@ nav .navbar-list .navbar-item .navbar-link {
 	text-decoration: none;
 	font-weight: 600;
 }
+
+#header {
+	padding: 10rem 0;
+}
+
+#header .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#header .header-img {
+	display: none;
+}
+
+@media (min-width: 550px) {
+	#header .header-img {
+		display: block;
+		max-width: 90%;
+		height: auto;
+	}
+}
+
+#quick-facts {
+	padding: 7rem 0;
+	text-align: center;
+}
+
+#quick-facts i {
+	font-size: 7em;
+	color: #bbb;
+}
+
+#contact {
+	border-top: 1px solid #ddd;
+	padding: 7rem 0;
+}

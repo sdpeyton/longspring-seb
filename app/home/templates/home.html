@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block additional_assets %}
+	
+	{% include 'home_assets.html' %}
+
+{% endblock %}
+
+{% block header %}
+
+	{% include 'header.html' %}
+
+{% endblock %}
+
+{% block content %}
+	{% load static %}
+	
+	<div class='container'>
+
+		<div id='quick-facts' class='section'>
+			<div class='row'>
+				<div class='four columns'>
+					<i class="material-icons">cloud_done</i>
+					<h5>Leaverage the cloud for lightning fast computation of complex imagery models</h5>
+				</div>
+				<div class='four columns'>
+					<i class="material-icons">photo_library</i>
+					<h5>Download and share the resulting images as georeferenced rasters</h5>
+				</div>
+				<div class='four columns'>
+					<i class="material-icons">pie_chart</i>
+					<h5>Run analytics and create charts to help showcase your results</h5>
+				</div>
+			</div>
+		</div>
+
+		<div id='contact' class='section'>
+			<h3>Get in Contact</h3>
+			<form>
+				<div class='row'>
+					<div class='six columns'>
+						<label for="name-input">Your name</label>
+						<input id="name-input" class="u-full-width" type="text" placeholder="Steve Peyton">
+					</div>
+					<div class='six columns'>
+						<label for="email-input">Your email</label>
+						<input id="email-input" class="u-full-width" type="email" placeholder="stephen.d.peyton@gmail.com" >
+					</div>
+				</div>
+				<label for="message-input">Message</label>
+		  		<textarea class="u-full-width" placeholder="Hi Steve..." id="message-input"></textarea>
+				<label>
+				    <input type="checkbox">
+				    <span class="label-body">Send a copy to yourself</span>
+				</label>
+		  		<input class="button-primary" type="submit" value="Submit">
+			</form>
+		</div>
+
+	</div>
+
+{% endblock %}
