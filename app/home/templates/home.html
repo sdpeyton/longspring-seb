@@ -59,4 +59,13 @@
 
 	</div>
 
+	<script>
+		var header = document.getElementById('header');
+		document.body.onscroll = function(evt) {
+			var loc = header.getBoundingClientRect().bottom;
+			if (loc <= 0) document.body.className = 'docked';
+			else document.body.className = '';
+		};
+	</script>
+
 {% endblock %}

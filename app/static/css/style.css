@@ -4,6 +4,19 @@ nav {
 	border-bottom: 1px solid #ddd;
 }
 
+body.docked nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background: white;
+	z-index: 10;
+}
+
+body.docked #quick-facts {
+	padding-top: 13.5rem;
+}
+
 nav .navbar-list {
 	float: right;
 	list-style: none;
