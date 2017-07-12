@@ -2,9 +2,23 @@
 
 {% load render_bundle from webpack_loader %}
 
+{% load static %}
+
+{% block additional_assets %}
+
+	<link rel='stylesheet' href="{% static 'css/model-style.css' %}" />
+	<link rel='stylesheet' href="{% static 'css/mfb.css' %}" />
+
+	<link rel='stylesheet' href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyArpdVOBSY2xDqvXfKyvMeRDJ0eNfu86Hg&libraries=drawing" type="text/javascript"></script>
+
+{% endblock %}
+
 {% block content %}
 	
 	<div id='main'></div>
+
 	{% render_bundle 'main' %}
 	
 {% endblock %}

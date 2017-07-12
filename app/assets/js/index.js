@@ -1,9 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+let React = require('react');
+let ReactDOM = require('react-dom');
+
+let Draw = require('./draw');
+let Map = require('./map');
 
 class App extends React.Component {
 	render() {
-		return <h1>Welcome to the Surface Energy Balance Model!</h1>;
+		return (
+			<div id='container'>
+				<Draw />
+				<Map />
+			</div>
+		);
 	}
 }
 
